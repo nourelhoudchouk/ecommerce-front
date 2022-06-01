@@ -1,0 +1,281 @@
+/** @jsxImportSource @emotion/react */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.filterText {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.select {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.productWrapper {
+  padding: 50px;
+  display: flex;
+}
+
+
+.imgContainer {
+  flex: 1;
+}
+
+.img {
+  width: 100%;
+  /* height: 90vh; */
+}
+
+.info {
+  flex: 1;
+  padding: 0px 50px;
+  text-align: left;
+}
+
+
+.text {
+  margin: 20px 0px;
+}
+
+
+.price {
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.prodFilterContainer {
+  width: 50%;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+
+.filterTitle {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+
+.filterColor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* background-color: ${(props) => props.color}; */
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+
+.filterSize {
+  margin-left: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.addContainer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.amountContainer {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.amount {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px;
+}
+
+
+.addToCartButton {
+  padding: 15px;
+  border: 2px solid teal;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 500;
+
+}
+
+.addToCartButton:hover {
+  background-color: #f8f4f4;
+}
+
+/* Cart.jsx page */
+.wrapper {
+  padding: 20px;
+}
+
+.cartTitle {
+  font-weight: 300;
+  text-align: center;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.topText {
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productDetail {
+  flex: 2;
+  display: flex;
+}
+
+.details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.priceDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.productAmountContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.productAmount {
+  font-size: 24px;
+  margin: 5px;
+}
+
+.productPrice {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.summary {
+  flex: 1;
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  height: 60vh;
+}
+
+.checkoutBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+
+.topButton {
+  margin-left: 20px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  color: black
+}
+
+.payItem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin: 30px 0px;
+}
+
+.payCard {
+  margin-top: 20px;
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  height: 60vh;
+  width: 50%;
+  margin-left: 3px;
+
+}
